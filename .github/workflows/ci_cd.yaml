@@ -16,10 +16,6 @@ jobs:
       - name: Install Dependency
         run: npm install
       - name: Run tests
-        run: npm test
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps: 
+        run: npm test 
       - name: Deploy on production
         run: npm run deploy
